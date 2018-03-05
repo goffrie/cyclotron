@@ -1,0 +1,19 @@
+[package]
+name = "render"
+version = "0.1.0"
+authors = ["Geoffry Song <goffrie@gmail.com>"]
+
+[dependencies]
+stdweb = "0.4.0"
+stdweb-derive = "0.4.0"
+
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+
+font-rs = "0.1.0"
+
+smallvec = "0.6.0"
+
+[build-dependencies]
+webgl_generator = { git = "https://github.com/Diggsey/gl-rs.git", rev = "1823a5d0e9852ed0be64bfedbd4c8032f5b89167" }

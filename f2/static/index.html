@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Cyclotron</title>
+        <style>
+         #container {
+             position: fixed;
+             top: 0;
+             left: 0;
+             right: 0;
+             bottom: 0;
+             display: flex;
+             flex-flow: column;
+         }
+         body, html, canvas, #container {
+             margin: 0px;
+         }
+         #file-select {
+             background-color: #cdf;
+             padding: 10px;
+         }
+         #canvas {
+             flex-grow: 1;
+             min-height: 0;
+         }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="file-select">
+                <form>
+                    <input type="file" id="file" />
+                </form>
+            </div>
+            <canvas id="canvas">
+            </canvas>
+        </div>
+        <script src="render.js"></script>
+    </body>
+</html>
